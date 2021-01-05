@@ -416,9 +416,9 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .footer__col {
@@ -430,6 +430,12 @@ body.lock {
 }
 
 .footer__col_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0px 0px 0px auto;
 }
 
@@ -517,7 +523,7 @@ body.lock {
 }
 
 .hero__body {
-  padding: 80px 0px 0px 0px;
+  padding: 40px 0px 0px 0px;
 }
 
 .hero__title {
@@ -538,9 +544,9 @@ body.lock {
 .hero__glow {
   position: absolute;
   width: 100%;
-  -webkit-transform: translate(-40px, -40px) scale(1.1);
-      -ms-transform: translate(-40px, -40px) scale(1.1);
-          transform: translate(-40px, -40px) scale(1.1);
+  -webkit-transform: translate(-40px, -40px) scale(1.5);
+      -ms-transform: translate(-40px, -40px) scale(1.5);
+          transform: translate(-40px, -40px) scale(1.5);
   opacity: 0;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -600,6 +606,15 @@ body.lock {
   }
 }
 
+.if {
+  padding: 0px 0px 50px 0px;
+  transform: translate3d(0px, -15px, 0px);
+  -webkit-transform: translate3d(0px, -15px, 0px);
+  -ms-transform: translate3d(0px, -15px, 0px);
+  -o-transform: translate3d(0px, -15px, 0px);
+  -moz-transform: translate3d(0px, -15px, 0px);
+}
+
 .if__container {
   -webkit-filter: drop-shadow(28px 19px 18px rgba(0, 0, 0, 0.39));
           filter: drop-shadow(28px 19px 18px rgba(0, 0, 0, 0.39));
@@ -645,12 +660,21 @@ body.lock {
 }
 
 .if__title {
+  text-transform: uppercase;
   font-size: 32px;
   margin: 0px 0px 40px 0px;
+  padding: 0px 0px 0px 65px;
 }
 
 .if__item {
   margin: 0px 0px 30px 0px;
+}
+
+.if__btn {
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding: 9px 25px;
 }
 
 .if__img {
@@ -727,6 +751,14 @@ body.lock {
   border-radius: 10px;
   overflow: hidden;
   min-height: 211px;
+}
+
+.item-news_orange .item-news__title {
+  color: #ff4d00;
+}
+
+.item-news_orange .item-news__img:after {
+  background-color: rgba(0, 224, 255, 0.9);
 }
 
 .item-news__img {
